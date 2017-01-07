@@ -15,13 +15,30 @@ function SmartForm($formName){
   ?>
   <div class="container">
     <div class="row">
+      <div class="col-xs-12">
+        <h2><?php echo $SmartForm['Title']; ?></h2>
+        <?php echo $SmartForm['Description']; ?>
+      </div>
+    </div>
+    
+    <?php
+    $Columns = explode(',',$SmartForm['ReadFields'].','.$SmartField['WriteFields']);
+    foreach($Columns as $Column){
+    ?>
+    
+    <div class="row">
       <div class="col-xs-12 col-md-4">
-        label
+        <?php echo $Column; ?>:
       </div>
       <div class="col-xs-12 col-md-8">
         <input type="text" class="form-control">
       </div>
     </div>
+    
+    <?php
+    }
+    ?>
+    
   </div>
   <?php
   

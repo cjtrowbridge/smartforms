@@ -16,14 +16,14 @@ function SmartForm($formName){
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2><?php echo $SmartForm['Title']; ?><span style="float: right;"><a href="javascript:void(0);"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
+        <h2><?php echo $SmartForm['Title']; ?> <span class="smartfield_edit_button"><a href="javascript:void(0);"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
         <p><?php echo $SmartForm['Description']; ?></p>
       </div>
     </div>
     <div class="row">
       
     <?php
-    foreach($SmartForm['WriteFields'] as $WriteField){
+    foreach(explode(',',$SmartForm['WriteFields']) as $WriteField){
       if($Column==''){continue;}
     ?>
     
@@ -41,7 +41,7 @@ function SmartForm($formName){
     
     <?php
     }
-    foreach($SmartForm['ReadFields'] as $ReadField){
+    foreach(explode(',',$SmartForm['ReadFields']) as $ReadField){
       if($Column==''){continue;}
     ?>
     

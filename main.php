@@ -16,25 +16,42 @@ function SmartForm($formName){
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2><?php echo $SmartForm['Title']; ?></h2>
+        <h2><?php echo $SmartForm['Title']; ?><span style="float: right;"><a href="javascript:void(0);"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
         <p><?php echo $SmartForm['Description']; ?></p>
       </div>
     </div>
     <div class="row">
       
     <?php
-    $Columns = explode(',',$SmartForm['ReadFields'].','.$SmartForm['WriteFields']);
-    foreach($Columns as $Column){
+    foreach($SmartForm['WriteFields'] as $WriteField){
       if($Column==''){continue;}
     ?>
     
       <div class="col-xs-12 col-sm-2 col-md-2">
         <div style="text-align: right;">
-          <?php echo $Column; ?>:
+          <?php echo $WriteField; ?>:
         </div>
       </div>
       <div class="col-xs-12 col-sm-10 col-md-4">
-        <input type="text" class="form-control">
+        
+        <span class="smartform_read">value</span>
+        <input type="text" class="form-control smartform_edit">
+        
+      </div>
+    
+    <?php
+    }
+    foreach($SmartForm['ReadFields'] as $ReadField){
+      if($Column==''){continue;}
+    ?>
+    
+      <div class="col-xs-12 col-sm-2 col-md-2">
+        <div style="text-align: right;">
+          <?php echo $ReadField; ?>:
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-4">
+        value
       </div>
     
     <?php

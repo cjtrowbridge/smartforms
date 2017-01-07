@@ -24,6 +24,7 @@ function SmartForm($formName){
     <?php
     $Columns = explode(',',$SmartForm['ReadFields'].','.$SmartForm['WriteFields']);
     foreach($Columns as $Column){
+      if($Column==''){continue;}
     ?>
     
     <div class="row">

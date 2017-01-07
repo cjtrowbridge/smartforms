@@ -22,7 +22,7 @@ function SmartForm($formName){
     </div>
     
     <?php
-    $Columns = explode(',',$SmartForm['ReadFields'].','.$SmartField['WriteFields']);
+    $Columns = explode(',',$SmartForm['ReadFields'].','.$SmartForm['WriteFields']);
     foreach($Columns as $Column){
     ?>
     

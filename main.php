@@ -24,7 +24,7 @@ function SmartForm($formName){
   </style>
   <script>
     function SmartFormsToggleEditability(smartform){
-      smartform.parent().parent().parent().parent().css('border','1px solid #000');
+      smartform.parent().parent().parent().parent().parent().css('border','1px solid #000');
     }
   </script>
   <div class="container">

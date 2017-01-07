@@ -13,10 +13,24 @@ function SmartForm($formName){
   //default to reading the specified rows
   pd($SmartForm);
   ?>
+  <style>
+    .smartfield_edit_button,
+    .smartform_edit{
+      display: none;
+    }
+    h2:hover .smartfield_edit_button{
+      display: inline;
+    }
+  </style>
+  <script>
+    function SmartFormsToggleEditability(smartform){
+      smartform.parent().parent().parent().css('border','1px solid #000');
+    }
+  </script>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2><?php echo $SmartForm['Title']; ?> <span class="smartfield_edit_button"><a href="javascript:void(0);"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
+        <h2><?php echo $SmartForm['Title']; ?> <span class="smartfield_edit_button"><a href="javascript:void(0);" onclick="SmartFormsToggleEditability($(this));"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
         <p><?php echo $SmartForm['Description']; ?></p>
       </div>
     </div>

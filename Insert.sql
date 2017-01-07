@@ -1,6 +1,6 @@
 INSERT INTO  `tech2u`.`SmartForms` (
   `Name` ,
-  `ReadFields` ,
+  `ReadOnlyFields` ,
   `WriteFields` ,
   `InsertedTime` ,
   `InsertedUser`
@@ -8,7 +8,7 @@ INSERT INTO  `tech2u`.`SmartForms` (
 VALUES (
   'example',  
   'a,b',  
-  'a,b,c,d', 
+  'c,d', 
   NOW( ) ,  
   '1'
 );

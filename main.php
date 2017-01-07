@@ -11,10 +11,12 @@ function SmartForm($formName){
   $SmartForm=$SmartForm[0];
   
   //default to reading the specified rows
+  pd($SmartForm);
+  
   //understand the types and display them as relevant
   
   //option at top for editing values
   //use the correct types when editing
   //validate data types on submit. sanitize and handle database updates
-  
+  exit;
 }

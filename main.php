@@ -29,7 +29,7 @@ function SmartForm($formName){
     ?>
     
       <div class="col-xs-12 col-sm-2 col-md-2">
-        <div style="align: right;">
+        <div style="text-align: right;">
           <?php echo $Column; ?>:
         </div>
       </div>

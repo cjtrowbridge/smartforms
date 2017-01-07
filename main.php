@@ -12,6 +12,18 @@ function SmartForm($formName){
   
   //default to reading the specified rows
   pd($SmartForm);
+  ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        label
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <?php
   
   //understand the types and display them as relevant
   

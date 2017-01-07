@@ -17,7 +17,7 @@ function SmartForm($formName){
     <div class="row">
       <div class="col-xs-12">
         <h2><?php echo $SmartForm['Title']; ?></h2>
-        <?php echo $SmartForm['Description']; ?>
+        <p><?php echo $SmartForm['Description']; ?></p>
       </div>
     </div>
     <div class="row">

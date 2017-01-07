@@ -20,26 +20,26 @@ function SmartForm($formName){
         <?php echo $SmartForm['Description']; ?>
       </div>
     </div>
-    
+    <div class="row">
+      
     <?php
     $Columns = explode(',',$SmartForm['ReadFields'].','.$SmartForm['WriteFields']);
     foreach($Columns as $Column){
       if($Column==''){continue;}
     ?>
     
-    <div class="row">
-      <div class="col-xs-12 col-md-2">
+      <div class="col-xs-12 col-sm-2 col-md-2">
         <?php echo $Column; ?>:
       </div>
-      <div class="col-xs-12 col-md-10">
+      <div class="col-xs-12 col-sm-10 col-md-4">
         <input type="text" class="form-control">
       </div>
-    </div>
     
     <?php
     }
     ?>
-    
+      
+    </div>
   </div>
   <?php
   

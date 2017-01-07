@@ -1,4 +1,4 @@
-INSERT INTO  `tech2u`.`SmartForms` (
+INSERT INTO  `SmartForms` (
   `Name` ,
   `ReadOnlyFields` ,
   `WriteFields` ,

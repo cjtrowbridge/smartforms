@@ -24,7 +24,7 @@ function SmartForm($formName){
       
     <?php
     foreach(explode(',',$SmartForm['WriteFields']) as $WriteField){
-      if($Column==''){continue;}
+      if($WriteField==''){continue;}
     ?>
     
       <div class="col-xs-12 col-sm-2 col-md-2">
@@ -42,7 +42,7 @@ function SmartForm($formName){
     <?php
     }
     foreach(explode(',',$SmartForm['ReadFields']) as $ReadField){
-      if($Column==''){continue;}
+      if($ReadField==''){continue;}
     ?>
     
       <div class="col-xs-12 col-sm-2 col-md-2">

@@ -27,8 +27,8 @@ function SmartForm($formName){
       
       //if(smartform.find('.smartform_edit').first().is(':hidden')){
       
-        smartform.find('.smartform_edit').toggle('fast');
         smartform.find('.smartform_read').toggle('fast');
+        smartform.find('.smartform_edit').toggle('fast');
         
       //}
       

@@ -50,7 +50,7 @@ function SmartForm($formName){
     
       <div class="col-xs-12 col-sm-2 col-md-2">
         <div style="text-align: right;">
-          <?php echo $WriteField; ?>:
+          <b><?php echo $WriteField; ?>:</b>
         </div>
       </div>
       <div class="col-xs-12 col-sm-10 col-md-4">
@@ -68,7 +68,7 @@ function SmartForm($formName){
     
       <div class="col-xs-12 col-sm-2 col-md-2">
         <div style="text-align: right;">
-          <?php echo $ReadField; ?>:
+          <b><?php echo $ReadField; ?>:</b>
         </div>
       </div>
       <div class="col-xs-12 col-sm-10 col-md-4">

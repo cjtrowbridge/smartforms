@@ -24,13 +24,13 @@ function SmartForm($formName){
   </style>
   <script>
     function SmartFormsToggleEditability(smartform){
-      smartform.parent().parent().parent().parent().parent().css('border','1px solid #000');
+      smartform.css('background-color','pink');
     }
   </script>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2><?php echo $SmartForm['Title']; ?> <span class="smartfield_edit_button"><a href="javascript:void(0);" onclick="SmartFormsToggleEditability($(this));"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
+        <h2><?php echo $SmartForm['Title']; ?> <span class="smartfield_edit_button"><a href="javascript:void(0);" onclick="SmartFormsToggleEditability($(this).parent().parent().parent().parent().parent());"><i class="material-icons" title="Edit">mode_edit</i></a></span></h2>
         <p><?php echo $SmartForm['Description']; ?></p>
       </div>
     </div>

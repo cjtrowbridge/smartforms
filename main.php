@@ -24,7 +24,14 @@ function SmartForm($formName){
   </style>
   <script>
     function SmartFormsToggleEditability(smartform){
-      smartform.css('background-color','pink');
+      
+      //if(smartform.find('.smartform_edit').first().is(':hidden')){
+      
+        smartform.find('.smartform_edit').slideToggle();
+        smartform.find('.smartform_read').slideToggle();
+        
+      //}
+      
     }
   </script>
   <div class="container">
